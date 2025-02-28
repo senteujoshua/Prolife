@@ -120,7 +120,8 @@
 }
 /* services section */
 #services{
-    background: linear-gradient(rgba(26, 98, 222,0.5), rgba(37, 82, 172, 0.5));
+    background: linear-gradient(rgba(26, 144, 222, 0.5), rgba(37, 123, 172, 0.5));
+    background-color: #203b43;
     padding: 30px 0 5%;
 }
 .service-wrapper{
