@@ -1,7 +1,7 @@
 .hero{
-    height: 85vh;
+    height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(3, 93, 167, 0.7), rgba(16, 70, 113, 0.7)), url(../images/tom-claes-CfdzNybONzc-unsplash.jpg);
+    background: linear-gradient(rgba(4, 55, 103, 0.85), rgba(6, 67, 92, 0.85)), url(../images/tom-claes-CfdzNybONzc-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,7 +11,57 @@
     height: 100%;
     text-align: left;
     margin-top: 150px;
+    position: relative;
 }
+.contact-form{
+    box-shadow: 2px -1px 29px -2px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    background-color: #122b32;
+}
+.contact-form h3{
+    padding-left: 3.1%;
+    font-family: "Forum", serif;
+    font-size: 1.7em;
+    color: #f9f9f9;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+input{
+    border: none;
+    border-radius: 6px;
+    width: 300px;
+    height: 65px;
+    background-color: #f9f9f9;
+    color: #1b396d;
+    padding: 0 20px;
+}
+.contact-btn{
+    width: 340px;
+    height: 65px;
+    background: linear-gradient(to right,rgba(78, 152, 192, 0.7), rgba(1, 57, 169, 0.9));
+    color: #f9f9f9;
+    padding: 12px 6px;
+    font-family: "Forum", serif;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.about-btn:hover{
+    transform: scale(1.05);
+}
+
 .hero-wrap p{
     color: #f9f9f9;
     font-family: "Forum", serif;
@@ -39,13 +89,13 @@
     transition: 0.6s;
 }
 .discover-btn:hover{
-    background-color: rgba(59, 148, 183,0.6);
+    background-color: #122b32;
 }
 
 /* about section */
 .about{
     padding: 30px 0 3%;
-    margin: 40px 0 0;
+    margin: 140px 0 0;
 }
 .about .container{
     padding: 10px 6.5%;
