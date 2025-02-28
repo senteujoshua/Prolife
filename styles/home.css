@@ -1,15 +1,16 @@
 .hero{
-    height: 100vh;
+    height: 85vh;
     width: 100%;
-    background: linear-gradient(rgba(26, 98, 222,0.5), rgba(37, 82, 172, 0.5)), url(images/jafar-ahmed-E285pJbC4uE-unsplash.jpg);
+    background: linear-gradient(rgba(3, 93, 167, 0.7), rgba(16, 70, 113, 0.7)), url(../images/tom-claes-CfdzNybONzc-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .hero-wrap{
     width: 100%;
+    height: 100%;
     text-align: left;
-    margin-top: 180px;
+    margin-top: 150px;
 }
 .hero-wrap p{
     color: #f9f9f9;
@@ -20,15 +21,17 @@
 .hero-wrap h1{
     font-family: "Faculty Glyphic", serif;
     font-size: 4.5em;
-    margin-bottom: 25px;
     color: #f9f9f9;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+.hero-wrap a{
+    margin-top: 40px;
 }
 .discover-btn{
     background-color: transparent;
     color: #f9f9f9;
     width: 190px;
-    padding: 15px 6px;
+    padding: 15px 45px;
     font-size: 1.4em;
     font-family: "Forum", serif;
     border: 1.5px solid #f9f9f9;
