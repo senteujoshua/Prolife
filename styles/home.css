@@ -216,7 +216,9 @@ input{
     bottom: 0;
 }
 .learnmore button{
-    margin-top:80%
+    margin-top:80%;
+    width: 190px;
+    padding: 8px 15px;
 }
 .card h2{
     font-family: "Forum", serif;
@@ -230,3 +232,85 @@ input{
     font-size: 1.15em;
     letter-spacing: 1.2px;
 }
+.trust-badges {
+    text-align: center;
+    height: 95vh;
+    background: linear-gradient(rgba(2, 50, 141, 0.89),rgba(1, 73, 206, 0.89)), url(images/What\ Are\ Run-Flat\ Tires_.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+  }
+  .badges-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .badge-cont{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .badge-cont p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .badge-cont .second{
+    margin-top: 15px;
+    font-size: 1.18em;
+  }
+  .badge-cont h2{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+    text-align: left;
+    font-family: "Forum", serif;
+  }
+  .badge-cont img{
+    width: 100%;
+    height: 290px;
+  }
+  
+  .qualify{
+    height: 100%;
+    flex-basis: 53%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  .qualify-card{
+    width: 240px;
+    height: 240px;
+    background: rgba(111, 142, 172,0.5);
+    border-radius: 5px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .qualify-card i{
+    padding: 20px 17px;
+    background: #0a024b;
+    font-size: 2em;
+    color: #f9f9f9;
+  }
+  .qualify-card h2{
+    font-family: "Forum", serif;
+    font-size: 1.3em;
+    color: #f9f9f9;
+  }
+  .qualify-card p{
+    font-size: 13.5px;
+    line-height: 20px;
+    color: #f9f9f9;
+  }
