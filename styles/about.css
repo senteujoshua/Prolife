@@ -95,7 +95,7 @@
     transform: scale(1.05);
 }
 .cta{
-    height: 600px;
+    height: 450px;
     background: linear-gradient(rgba(4, 55, 103, 0.85), rgba(6, 67, 92, 0.85)), url(../images/IMG_20230207_134719_532.jpg);
     background-size: cover;
     background-position: center;
@@ -108,7 +108,7 @@
     width: 86%;
     height: 600px;
     position: absolute;
-    top:45%;
+    top:30%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -121,7 +121,7 @@
 .mission-values h1{
     width: 100%;
     padding: 2px 20px;
-    color: #062690;
+    color: #023e4b;
     font-size: 2.5em;
     font-family: "Roboto Condensed", serif;
     margin-bottom: 30px;
@@ -135,7 +135,7 @@
     font-family: "Forum", serif;
     width: 100%;
     padding: 2px 20px;
-    color: #062690;
+    color: #023e4b;
     font-size: 2.8em;
 }
 .cont {
@@ -175,7 +175,7 @@
     text-align: center;
     width: 100%;
     padding: 2px 20px;
-    color: #062690;
+    color: #0a024b;
     font-size: 4em;
     font-family: "Roboto Condensed", serif;
     margin-bottom: 14px;
