@@ -1,0 +1,82 @@
+.service-testimony{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.testimonials .container{
+    padding: 5px 4%;
+}
+.test-wrap{
+    width: 100%;
+}
+.test-wrap h1{
+    font-family: "Reddit Sans Condensed", serif;
+    margin: 12px 0 40px;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+.test-wrap p{
+    text-align: center;
+    color: #235a84;
+    font-family: "Forum", serif;
+    font-size: 1.7em;
+    margin-bottom: 27px;
+    margin-top: 55px;
+}
+.service-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+.service-card{
+    width: 350px;
+    height: 340px;
+    padding: 5px 10px 14px;
+    text-align: left;
+    transition: 0.5s;
+}
+.service-card:hover{
+    background-color: #f7fdff;
+}
+.service-img{
+    height: 50%;
+    width: 100%;
+}
+.service-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.service-card h3{
+    font-family: "Forum", serif;
+    font-size: 1.4em;
+    color: #235a84;
+    margin: 15px 0;
+}
+.service-card p{
+    font-family: "Reddit Sans Condensed", serif;
+    margin: 15px 0;
+    font-size: 1.05em;
+}
+.service-card a{
+    padding:10px 5px;
+    font-family: "Reddit Sans Condensed", serif;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4e9ab8;
+    transition: 0.5s;
+}
+.service-card a:hover{
+    color: #235a84;
+}
+.service-card a i{
+    color: #4e9ab8;
+}
