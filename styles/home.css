@@ -21,10 +21,12 @@
     transform: translateX(-50%);
     border-radius: 10px;
     width: 100%;
-    height: 350px;
+    height: 320px;
     background-color: #122b32;
 }
 .contact-form h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
     padding-left: 3.1%;
     font-family: "Forum", serif;
     font-size: 1.7em;
@@ -308,4 +310,47 @@ input{
 }
 .test-card a i{
     color: #4e9ab8;
+}
+/* cta */
+.urgency{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 55, 103, 0.7), rgba(6, 67, 92, 0.7)), url(../images/orthopadics.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.urgent-wrap{
+    width: 70%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.urgent-wrap h1{
+    font-family: "Faculty Glyphic", serif;
+    font-size: 5em;
+    color: #f9f9f9;
+    margin: 40px 0;
+}
+.urgent-wrap h3{
+    font-family: "Forum", serif;
+    font-size: 2.6em;
+    color: #f9f9f9;
+    margin:30px 0;
+}
+.urgent-wrap p{
+    color: #f9f9f9;
+    font-family: "Forum", serif;
+    font-size: 2.3em;
+    margin-bottom: 40px;
+}
+.urgent-wrap p span{
+    color: #01a4f0;
+}
+.urgent-wrap a{
+    margin: 40px auto;
 }
