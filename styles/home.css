@@ -169,7 +169,7 @@ input{
     transform: scale(1.05);
 }
 /* services section */
-#services{
+.services{
     padding: 30px 0 5%;
 }
 .service-wrapper{
@@ -232,85 +232,80 @@ input{
     font-size: 1.15em;
     letter-spacing: 1.2px;
 }
-.trust-badges {
-    text-align: center;
-    height: 95vh;
-    background: linear-gradient(rgba(2, 50, 141, 0.89),rgba(1, 73, 206, 0.89)), url(images/What\ Are\ Run-Flat\ Tires_.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 0;
-  }
-  .badges-content{
+.testimonials{
+    height: 650px;
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .badge-cont{
-    flex-basis: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     justify-content: center;
-  }
-  .badge-cont p{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-  }
-  .badge-cont .second{
-    margin-top: 15px;
-    font-size: 1.18em;
-  }
-  .badge-cont h2{
-    font-size: 3.5em;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.testimonials .container{
+    padding: 5px 4%;
+}
+.test-wrap{
+    width: 100%;
+}
+.test-wrap h1{
+    font-family: "Reddit Sans Condensed", serif;
+    margin: 25px 0 55px;
+    font-size: 4em;
     font-weight: bold;
-    color: #fff;
-    line-height: 50px;
-    text-align: left;
-    font-family: "Forum", serif;
-  }
-  .badge-cont img{
+    text-align: center;
+}
+.test-cards{
     width: 100%;
-    height: 290px;
-  }
-  
-  .qualify{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+.test-card{
+    width: 350px;
+    height: 340px;
+    padding: 5px 10px 14px;
+    border-bottom: 5px solid #4e9ab8;
+    border-right: 5px solid #4e9ab8;
+    border-bottom-right-radius: 14px;
+    text-align: left;
+    transition: 0.5s;
+}
+.test-card:hover{
+    background-color: #f7fdff;
+}
+.test-img{
+    height: 50%;
+    width: 100%;
+}
+.test-img img{
     height: 100%;
-    flex-basis: 53%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    align-items: center;
-  }
-  .qualify-card{
-    width: 240px;
-    height: 240px;
-    background: rgba(111, 142, 172,0.5);
-    border-radius: 5px;
-    padding: 15px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .qualify-card i{
-    padding: 20px 17px;
-    background: #0a024b;
-    font-size: 2em;
-    color: #f9f9f9;
-  }
-  .qualify-card h2{
+    width: 100%;
+    object-fit: cover;
+}
+.test-card h3{
     font-family: "Forum", serif;
-    font-size: 1.3em;
-    color: #f9f9f9;
-  }
-  .qualify-card p{
-    font-size: 13.5px;
-    line-height: 20px;
-    color: #f9f9f9;
-  }
+    font-size: 1.4em;
+    color: #235a84;
+    margin: 15px 0;
+}
+.test-card p{
+    font-family: "Reddit Sans Condensed", serif;
+    margin: 15px 0;
+    font-size: 1.05em;
+}
+.test-card a{
+    padding:10px 5px;
+    font-family: "Reddit Sans Condensed", serif;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4e9ab8;
+    transition: 0.5s;
+}
+.test-card a:hover{
+    color: #235a84;
+}
+.test-card a i{
+    color: #4e9ab8;
+}
