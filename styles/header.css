@@ -24,7 +24,7 @@ nav{
 }
 
 .logo{
-    flex-basis: 20%;
+    flex-basis: 35%;
     height: 150px;
     display: flex;
     justify-content: left;
@@ -35,51 +35,60 @@ nav{
     height: 50%;
     object-fit: cover;
 }
-.links-wrapper{
-    flex-basis: 80%;
+.menu-icon{
+    display: none;
+}
+.close-icon{
+    display: none;
+}
+
+.nav-ul{
+    flex: 55%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-nav ul{
+.nav-ul ul{
     width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
 }
-nav ul li{
+.nav-ul ul li{
+    margin: 70px;
     display: inline-block;
     width: 67px;
     color: #0a024b;
     transition: color 0.8s
 }
-nav ul li:hover{
+.nav-ul ul li:hover{
     color: #160498;
 }
-nav ul li a{
+.nav-ul ul li a{
     font-family: "Kanit", serif;
-    font-size: 1.05em;
+    font-size: 1.25em;
     text-decoration: none;
     transition: transform 0.8s ease;
 }
-nav ul li a:hover{
+.nav-ul ul li a:hover{
     transform: scale(1.05);
     color: #3b94b7;
 }
-nav ul li a i{
+.nav-ul ul li a i{
     font-size: 1.4em;
 }
-nav button{
+.nav-ul button{
     background-color: #699fc9;
     color: #f9f9f9;
-    width: 190px;
-    padding: 15px 6px;
+    width: 205px;
+    padding: 25px 6px;
     font-family: "Kanit", serif;
+    font-size: 1.3em;
     border: none;
     border-radius: 5px;
     transition: 0.6s;
 }
-nav button:hover{
+.nav-ul button:hover{
     background-color: #3b94b7;
 }
