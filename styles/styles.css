@@ -8,11 +8,22 @@
     box-sizing: border-box;
   }
   html{
-    scroll-behavior: smooth;
+      scroll-behavior: smooth;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      overflow-x: hidden; /* Disable horizontal scrolling */
+      width: 100%; /* Make sure the body doesn't exceed the viewport width */
+      box-sizing: border-box; /* Include padding and border in the width */
   }
   body{
-    overflow-x:hidden ;
-  }
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      overflow-x: hidden; /* Disable horizontal scrolling */
+      width: 100%; /* Make sure the body doesn't exceed the viewport width */
+      box-sizing: border-box; /* Include padding and border in the width */
+    }
+    
+  
 
   h1, h2, h3 {
     color: #2c3e50;
