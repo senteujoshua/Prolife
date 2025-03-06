@@ -1,5 +1,25 @@
 @media (max-width:480px){
+    .container{
+        padding: 10px 6%;
+    }
     .header{
-        
+        position: relative;
+    }
+    .nav-ul{
+        position: absolute;
+        width: 250px;
+        right: 20px;
+        top: 85%;
+        flex-direction: column;
+        gap: 50px;
+        transition: 0.5s ease;
+        background-color: #f9f9f9;
+        z-index: 1000;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .nav-ul.show{
+        display: flex;
     }
 }

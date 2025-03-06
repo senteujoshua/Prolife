@@ -37,9 +37,11 @@ nav{
 }
 .menu-icon{
     display: none;
+    font-size: 2em;
 }
 .close-icon{
     display: none;
+    font-size: 2em;
 }
 
 .nav-ul{
