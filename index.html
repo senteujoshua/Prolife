@@ -65,7 +65,7 @@
       <div class="about-wrap">
         
         <div class="column">
-            <div class="video-col">
+            <div class="video-col" onclick="openVideo()">
                 <video id="clinicVideo" class="video" poster="images/IMG_3339.JPG">
                   <source src="prolifevideos/benedict-odhiambo_TCdCouQo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -73,6 +73,17 @@
                 <button id="playButton" class="play-button">▶</button>
             </div>
         </div>
+
+        <!-- Video Popup Modal (Added this) -->
+        <div id="videoModal" class="video-modal">
+          <div class="video-container">
+              <span class="close-btn" onclick="closeVideo()">✖</span>
+              <video id="popupVideo" controls>
+                  <source src="prolifevideos/benedict-odhiambo_TCdCouQo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
 
         <div class="column">
             <div class="text">
@@ -241,7 +252,26 @@ document.addEventListener("DOMContentLoaded", function () {
     video.addEventListener("ended", function () {
         playButton.style.display = "flex";
     });
+
+    function openVideo() {
+    let modal = document.getElementById("videoModal");
+    let video = document.getElementById("popupVideo");
+    
+    modal.style.display = "flex"; // Show the modal
+    video.play(); // Auto-play the video when opened
+}
+
+function closeVideo() {
+    let modal = document.getElementById("videoModal");
+    let video = document.getElementById("popupVideo");
+
+    modal.style.display = "none"; // Hide the modal
+    video.pause(); // Pause the video when closed
+    video.currentTime = 0; // Reset video to start
+}
+
 });
+
 
 
   </script>
