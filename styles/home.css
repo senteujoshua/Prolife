@@ -113,90 +113,76 @@ input{
 
 .column {
     height: 100%;
-    flex: 45%;
+    flex: 47%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* Styles for the dark background overlay */
-.video-modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-/* Centered video container */
-.video-container {
-    position: relative;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 800px;
 }
 
-/* Close button */
-.close-btn {
+.video-col{
+    width: 82%;
+    height: 800px;
+    border-radius:27px;
+    background: linear-gradient(rgba(4, 55, 103, 0.5), rgba(6, 67, 92, 0.45)), url(../images/IMG_3339.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-col button{
+    font-size: 2em;
+    color: #f9f9f9;
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: #235a84;
+}
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: 000;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Video inside Modal */
+.modal-content video {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Close Button */
+.close {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 20px;
-    color: white;
+    font-size: 24px;
     cursor: pointer;
+    color: #f9f9f9;
 }
 
-/* Ensure video is responsive */
-.video-container video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 90vh; /* Ensures the video does not go beyond the screen */
-    object-fit: contain; 
-}
-
-
-.video-col {
-    cursor: pointer;
-    width: 70%;
-    height: 600px;
-    position: relative;
-    display: inline-block;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #3c79a7;
-}
-
-.play-button {
-    width: 80px;
-    height: 80px;
-    background-color: rgba(0, 102, 255, 0.8); /* Blue color */
-    border: none;
-    border-radius: 50%;
-    color: white;
-    font-size: 26px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.play-button:hover {
-    background-color: rgba(0, 102, 255, 1);
-}
 
 .text {
     margin-left: 90px;

@@ -63,29 +63,26 @@
 <div class="about">
   <div class="container">
       <div class="about-wrap">
-        
-        <div class="column">
-            <div class="video-col" onclick="openVideo()">
-                <video id="clinicVideo" class="video" poster="images/IMG_3339.JPG">
-                  <source src="prolifevideos/benedict-odhiambo_TCdCouQo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <button id="playButton" class="play-button">▶</button>
-            </div>
-        </div>
 
-        <!-- Video Popup Modal (Added this) -->
-        <div id="videoModal" class="video-modal">
-          <div class="video-container">
-              <span class="close-btn" onclick="closeVideo()">✖</span>
-              <video id="popupVideo" controls>
-                  <source src="prolifevideos/benedict-odhiambo_TCdCouQo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-              </video>
-          </div>
-      </div>
+<!-- Video Section -->
+<div class="column">
+  <div class="video-col">
+      <button id="playButton" class="play-button">▶</button>
+  </div>
+</div>
 
-        <div class="column">
+<!-- Video Popup Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <video id="clinicVideo" controls>
+          <source src="prolifevideos/benedict-odhiambo_TCdCouQo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+</div>
+
+      <div class="column">
             <div class="text">
                 <p class="special">Welcome to Our Orthopedics Clinic</p>
                 <h3>We offer specialized orthopedics to meet your needs</h3>
@@ -235,44 +232,32 @@
     </div>
   </footer>
   <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const video = document.getElementById("clinicVideo");
-    const playButton = document.getElementById("playButton");
+    document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("videoModal");
+    var playButton = document.getElementById("playButton");
+    var closeButton = document.querySelector(".close");
+    var video = document.getElementById("clinicVideo");
 
+    // Show modal when play button is clicked
     playButton.addEventListener("click", function () {
+        modal.style.display = "flex";
         video.play();
-        playButton.style.display = "none"; // Hide play button after playing
     });
 
-    // Show button again if the video is paused or ends
-    video.addEventListener("pause", function () {
-        playButton.style.display = "flex";
+    // Close modal when the close button is clicked
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+        video.pause();
     });
 
-    video.addEventListener("ended", function () {
-        playButton.style.display = "flex";
+    // Close modal when clicking outside the video content
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            video.pause();
+        }
     });
-
-    function openVideo() {
-    let modal = document.getElementById("videoModal");
-    let video = document.getElementById("popupVideo");
-    
-    modal.style.display = "flex"; // Show the modal
-    video.play(); // Auto-play the video when opened
-}
-
-function closeVideo() {
-    let modal = document.getElementById("videoModal");
-    let video = document.getElementById("popupVideo");
-
-    modal.style.display = "none"; // Hide the modal
-    video.pause(); // Pause the video when closed
-    video.currentTime = 0; // Reset video to start
-}
-
 });
-
-
 
   </script>
 </body>
