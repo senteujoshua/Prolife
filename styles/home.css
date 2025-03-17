@@ -148,7 +148,7 @@ input{
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 110%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
@@ -157,20 +157,27 @@ input{
 
 /* Modal Content */
 .modal-content {
-    background-color: 000;
+    height: 85%;
+    width: 80%;
+    max-width: 900px;
+    aspect-ratio: 21 / 9;
+    background-color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     position: relative;
-    max-width: 90%;
     text-align: center;
+    overflow: hidden;
 }
 
 /* Video inside Modal */
 .modal-content video {
     width: 100%;
-    max-width: 600px;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 /* Close Button */
