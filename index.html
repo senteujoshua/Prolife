@@ -60,30 +60,33 @@
         </div>
     </div>
 </div>
-<!-- about section -->
 <div class="about">
   <div class="container">
       <div class="about-wrap">
         
         <div class="column">
-          <div class="img-col">
-              <div class="img">
-                  <img src="images/IMG_20230207_134719_532.jpg" alt="doctor">
-              </div>
-          </div>
-      </div>
-          <div class="column">
-              <div class="text">
-                  <p class="special">Welcome to Our Orthopedics Clinic</p>
-                  <h3>We offer specialized orthopedics to meet your needs</h3>
-                  <p>From routine doctor visits to the most advanced procedures, we're here for you. Our physicians specialize in orthopedic surgery and handle the diagnosis and treatment of injuries of the bones, muscles and ligaments in both adults and children</p>
-                  <button class="about-btn">About Us</button>
-              </div>
-          </div>
+            <div class="video-col">
+                <video id="clinicVideo" class="video" poster="images/IMG_3339.JPG">
+                    <source src="prolifevideos/BENEDICT ODHIAMBO .mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="playButton" class="play-button">▶</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="text">
+                <p class="special">Welcome to Our Orthopedics Clinic</p>
+                <h3>We offer specialized orthopedics to meet your needs</h3>
+                <p>From routine doctor visits to the most advanced procedures, we're here for you. Our physicians specialize in orthopedic surgery and handle the diagnosis and treatment of injuries of the bones, muscles, and ligaments in both adults and children.</p>
+                <button class="about-btn">About Us</button>
+            </div>
+        </div>
 
       </div>
   </div>
 </div>
+
   <!-- Services-->
   <div class="services">
     <div class="container">
@@ -220,6 +223,27 @@
       </div>
     </div>
   </footer>
-  <script src="style.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("clinicVideo");
+    const playButton = document.getElementById("playButton");
+
+    playButton.addEventListener("click", function () {
+        video.play();
+        playButton.style.display = "none"; // Hide play button after playing
+    });
+
+    // Show button again if the video is paused or ends
+    video.addEventListener("pause", function () {
+        playButton.style.display = "flex";
+    });
+
+    video.addEventListener("ended", function () {
+        playButton.style.display = "flex";
+    });
+});
+
+
+  </script>
 </body>
 </html>
