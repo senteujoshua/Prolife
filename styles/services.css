@@ -1,24 +1,47 @@
 .service-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #e6eef1;
 }
-.service-wrap{
+.service-wrapper {
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+
+.serve {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    transition: o.5s;
+}
+.serve:hover{
+    background-color:rgba(175, 214, 222, 0.3);;
+}
+.serve-col {
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: start;
 }
-.serve{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 50px;
+.serveimg{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
 }
-.column{
-    flex: 50%;
+.serveimg img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
 }
-
+.discover-btn{
+    border-color: #0c3f66;
+    color: #0c3f66;
+    transition: 0.5s;
+}
+.discover-btn:hover{
+    background-color: #0c3f66;
+    color: #f7fdff;
+}
 .service-testimony{
     width: 100%;
     display: flex;
@@ -100,4 +123,12 @@
 }
 .service-card a i{
     color: #4e9ab8;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .serve {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+        text-align: center;
+    }
 }
