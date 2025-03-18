@@ -13,6 +13,10 @@
 .serve{
     display: grid;
     grid-template-columns: 2fr 2fr;
+    gap: 50px;
+}
+.column{
+    flex: 50%;
 }
 
 .service-testimony{
