@@ -39,6 +39,20 @@
     justify-content: center;
     align-items: center;
 }
+.img-col1{
+    width: 80%;
+    height: 600px;
+    background-color: rgba(78, 152, 192, 0.7);
+    border-radius: 5px;
+    position: relative;
+}
+.img-col1 .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 3%;
+    bottom: -3%;
+}
 .img-col2{
     width: 80%;
     height: 600px;
