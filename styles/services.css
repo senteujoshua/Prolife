@@ -1,3 +1,20 @@
+.service-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+}
+.serve{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
 .service-testimony{
     width: 100%;
     display: flex;
