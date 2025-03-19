@@ -417,3 +417,59 @@ input{
 .urgent-wrap a{
     margin: 40px auto;
 }
+
+@media screen and (max-width: 900px) {
+    .hero-wrap {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .hero-wrap h1 {
+        font-size: 2.5em;
+    }
+
+    .contact-form {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .form input, .contact-btn {
+        width: 100%;
+        height: 50px;
+    }
+
+    .about-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column {
+        flex: 100%;
+    }
+
+    .video-col {
+        height: 400px;
+    }
+
+    .services .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials .test-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .urgent-wrap {
+        width: 90%;
+    }
+
+    .urgent-wrap h1 {
+        font-size: 3em;
+    }
+
+    .urgent-wrap p {
+        font-size: 1.5em;
+    }
+}
