@@ -197,3 +197,26 @@ nav{
         right: 20px;
     }
 }
+@media screen and (max-width: 428px){
+    .header{
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f9f9f9;
+        z-index: 1000;
+    }
+    .logo{
+        flex-basis: 35%;
+        height: 150px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .logo img{
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+    }
+}
