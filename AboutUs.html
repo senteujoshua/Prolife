@@ -4,6 +4,7 @@
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Prolife Orthopedics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Acme&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Faculty+Glyphic&family=Forum&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Reddit+Sans+Condensed:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/header.css">
@@ -13,28 +14,35 @@
   <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
-  <!-- Header -->
-  <div class="header">
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <img src="images/FB_IMG_1739536302186-removebg-preview.png" alt="Prolife Orthopedics Logo" class="logo">
-        </div> 
+<!-- Header -->
+<div class="header" id="header">
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="images/FB_IMG_1739536302186-removebg-preview.png" alt="Prolife Orthopedics Logo" class="logo">
+      </div> 
 
-        <i class="bi bi-list menu-icon" id="menu"></i>
-        <div class="nav-ul" id="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="AboutUs.html">AboutUs</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <button>Book Appointment</button>
-        </div>
-        <i class="bi bi-x-lg close-icon"></i>
-      </nav>
-    </div>
+      <i class="bi bi-list menu-icon" id="menu"></i>
+      <div class="nav-ul" id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">AboutUs</a></li>
+          <li class="dropdown">
+            <a href="services.html">Services <i class="bi bi-caret-down-fill"></i></a>
+              <div class="dropdown-menu">
+                <a href="prosthetics.html">Prosthetics</a>
+                <a href="orthotics.html">Orthotics</a>
+                <a href="other.html" class="last">Other</a>
+              </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button>Book Appointment</button>
+      </div>
+      <i class="bi bi-x-lg close-icon"></i>
+    </nav>
   </div>
+</div>
     <!-- hero-section -->
     <div class="hero">
       <div class="container">
