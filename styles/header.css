@@ -220,3 +220,43 @@ nav{
         object-fit: contain;
     }
 }
+@media (min-width: 901px) and (max-width: 1265px){
+    .logo{
+        flex-basis: 45%;
+        height: 150px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .nav-ul{
+        flex: 40%;
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+        align-items: center;
+    }
+    .nav-ul ul{
+        width: 56%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .nav-ul ul li{
+    margin: 40px;
+    display: inline-block;
+    width: 100px;
+    color: #0a024b;
+    transition: color 0.8s;
+}
+    .nav-ul ul li{
+        margin: 10px;
+        display: inline-block;
+        width: 130px;
+        color: #0a024b;
+        transition: color 0.8s;
+    }
+    .nav-ul button{
+        width: 170px;
+    }
+}
