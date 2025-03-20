@@ -52,7 +52,7 @@
     padding-top: 100px;
     position: relative;
     background-color: rgb(228, 235, 241);
-    
+    flex-wrap: wrap;
 
     display: flex;
     /* flex-direction: column; */
