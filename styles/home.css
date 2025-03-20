@@ -419,17 +419,13 @@ input{
 }
 
 @media (max-width: 480px){
-    .hero {
+.hero {
         height: 100vh;
-    padding: 0;
+        padding: 0;
 }
 .hero-wrap {
     margin-top: 90px;
     text-align: center;
-}
-.hero-wrap p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
 }
 .hero-wrap h1 {
     font-size: 2.5em;
@@ -447,4 +443,184 @@ input{
 form {
     gap: 24px;
 }
+.about {
+    padding: 30px 0px 1.5%;
+    margin: 680px 0px 0px;
+}
+.about-wrap {
+    flex-direction: column-reverse;
+}
+.about-wrap .column{
+    width: 100%;
+}
+.text {
+    margin-left: 0;
+    height: 50%;
+    padding: 20px 5px;
+}
+.text .special {
+    margin-bottom: 10px;
+}
+.text h3 {
+    margin-bottom: 30px;
+}
+.video-col{
+    width: 89%;
+    height: 500px;
+}
+.service-wrapper h1 {
+    margin: 13px 0;
+    font-size: 3em;
+}
+.cards {
+    margin-top: 30px;
+    gap: 20px;
+}
+.card{
+    height: 300px;
+}
+.learnmore button {
+    margin-top: 40%;
+}
+.testimonials {
+    margin-top: 10px;
+    height: fit-content;
+}
+.test-wrap h1 {
+    margin: 5px 0 15px;
+    font-size: 2.2em;
+}
+.test-cards {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+.test-card h3 {
+    font-size: 0.98em;
+    margin: 1px 0;
+}
+.test-card p {
+    margin: 2px 0;
+    font-size: 0.99em;
+}
+.test-card a {
+    font-size: 0.99em;
+}
+.test-card {
+    width: 280px;
+    height: 265px;
+}
+.urgency {
+    height: 100vh;
+}
+.urgent-wrap {
+    width: 75%;
+    margin-top: 80px;
+    padding: 2px;
+    text-align: center;
+}
+.urgent-wrap h1 {
+    font-size: 2em;
+    margin: 0;
+}
+.urgent-wrap h3 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+.urgent-wrap p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.urgent-wrap p span {
+    color: #01a4f0;
+    font-size: 0.85em;
+}
+.discover-btn {
+    font-size: 1em;
+}
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .hero {
+        padding: 90px 0;
+}
+.hero-wrap {
+    margin-top: 150px;
+    text-align: center;
+}
+.hero-wrap p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.hero-wrap h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+.contact-form {
+    padding: 30px 10px;
+}
+.contact-form {
+    padding: 30px 10px;
+    height: fit-content;
+}
+form {
+    gap: 24px;
+}
+.contact-btn {
+    width: 300px;
+}
+.urgency {
+    height: 100vh;
+}
+.urgent-wrap {
+    width: 75%;
+    margin-top: 80px;
+    padding: 2px;
+    text-align: center;
+}
+.urgent-wrap h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.urgent-wrap h3 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+.urgent-wrap p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .contact-form {
+        padding: 30px 10px;
+        height: fit-content;
+    }
+    .contact-form {
+        top: 85%;
+    }
+    input{
+        width: 340px;
+    }
+    .contact-form h3 {
+        padding-bottom: 19px;
+        padding-left: 10%;
+    }
+    .urgent-wrap h1 {
+        font-size: 4.3em;
+        margin: 0;
+    }
+    .urgent-wrap h3 {
+        font-size: 2.4em;
+        margin: 20px 0;
+    }
+    .urgent-wrap p {
+        font-size: 1.7em;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    .contact-btn {
+        width: 300px;
+    }
 }
