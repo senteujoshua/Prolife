@@ -541,8 +541,8 @@ form {
 }
 }
 @media (min-width: 481px) and (max-width: 768px){
-    .hero {
-        padding: 90px 0;
+.hero {
+    padding: 90px 0;
 }
 .hero-wrap {
     margin-top: 150px;
@@ -552,6 +552,7 @@ form {
     font-size: 1.5em;
     margin-bottom: 30px;
 }
+
 .hero-wrap h1 {
     font-size: 3.5em;
     margin-bottom: 30px;
@@ -565,9 +566,28 @@ form {
 }
 form {
     gap: 24px;
+    margin-bottom: 30%;
 }
 .contact-btn {
     width: 300px;
+}
+.column {
+    flex: 1 1 50%;
+    padding: 15px 0;
+}
+.text {
+    margin-left: 20px;
+}
+.text .special {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.text h3 {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+.video-col{
+    height: 550px;
 }
 .urgency {
     height: 100vh;

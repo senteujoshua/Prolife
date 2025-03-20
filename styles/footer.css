@@ -125,13 +125,14 @@ footer {
     .col2 {
         flex-direction: column;
     }
-    .column {
+    .columnf {
         flex: 1 1 auto;
         padding: 15px 0;
     }
     .column h2 {
         font-size: 20px;
     }
+    
 }
 @media (min-width: 769px) and (max-width: 1024px){
     footer{
