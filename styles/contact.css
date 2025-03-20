@@ -68,6 +68,17 @@
     height: 100%;
 }
 
+@media (max-width: 768px) {
+    .centered-container {
+        flex-direction: column; /* Stack content on smaller screens */
+        gap: 15px;
+    }
+    
+    .centered-container img {
+        max-width: 70%; /* Increase image size for better view */
+    }
+}
+
 .centered-container p{
     
     flex-direction: column;
