@@ -421,15 +421,11 @@ input{
 @media (max-width: 480px){
     .hero {
         height: 100vh;
-    padding: 0;
+        padding: 0;
 }
 .hero-wrap {
     margin-top: 90px;
     text-align: center;
-}
-.hero-wrap p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
 }
 .hero-wrap h1 {
     font-size: 2.5em;
@@ -447,4 +443,55 @@ input{
 form {
     gap: 24px;
 }
+}
+@media (max-width: 768px){
+    .hero {
+        padding: 90px 0;
+}
+.hero-wrap {
+    margin-top: 150px;
+    text-align: center;
+}
+.hero-wrap p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.hero-wrap h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+.contact-form {
+    padding: 30px 10px;
+}
+.contact-form {
+    padding: 30px 10px;
+    height: fit-content;
+}
+form {
+    gap: 24px;
+}
+.contact-btn {
+    width: 300px;
+}
+}
+@media (max-width: 1024px){
+    .contact-form {
+        padding: 30px 10px;
+        height: fit-content;
+    }
+    .contact-form {
+        top: 85%;
+    }
+    input{
+        width: 340px;
+    }
+    .contact-form h3 {
+        padding-bottom: 19px;
+        padding-left: 10%;
+    }
+}
+@media (max-width: 1440px){
+    .contact-btn {
+        width: 300px;
+    }
 }
