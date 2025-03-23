@@ -54,17 +54,21 @@
           <p>Your trusted partner in prosthetic solutions.</p>
           <a href="contact.html" class="btn-primary discover-btn">Get in Touch</a>
 
+
           <div class="contact-form">
             <h3>Make an Appointment</h3>
-            <form action="send_mail.php" method="POST">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <input type="number" name="Phone" placeholder="Phone Number" required>
-                <input type="text" name="Services" placeholder="Services" required>
-                <input type="date" name="Date" placeholder="Date">
-                <button type="submit"  class="contact-btn">Book Appointment</button>
-            </form>
-        </div>
+              <form id="appointmentForm">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <input type="text" name="phone" placeholder="Phone Number" required>
+                  <input type="text" name="services" placeholder="Services Required" required>
+                  <input type="date" name="date" required>
+                  <button type="submit" class="contact-btn" >Send Appointment Request</button>
+              </form>
+
+
+
+          </div>
         </div>
     </div>
 </div>
@@ -282,6 +286,27 @@
     });
 
 });
+
+
+        document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        let formData = new FormData(this);
+
+        fetch("/send-appointment-email", {
+        method: "POST",
+        body: formData,
+        headers: {
+        "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+    }
+    })
+        .then(response => response.json())
+        .then(data => {
+        alert(data.message);
+    })
+        .catch(error => console.error("Error:", error));
+    });
+
   
   </script>
   <script src="style.js"></script>
