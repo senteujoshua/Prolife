@@ -420,7 +420,7 @@ input{
 
 @media (max-width: 480px){
 .hero {
-        height: 100vh;
+        height: 85vh;
         padding: 0;
 }
 .hero-wrap {
@@ -428,12 +428,12 @@ input{
     text-align: center;
 }
 .hero-wrap h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 9%;
 }
 .hero-wrap p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    font-size: 1em;
+    margin-bottom: 6%;
 }
 .contact-form {
     top: 100%;
@@ -454,29 +454,43 @@ form {
     width: 100%;
 }
 .text {
+    height: 97%;
     margin-left: 0;
     padding: 20px 5px;
 }
 .text .special {
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 .text h3 {
-    margin-bottom: 30px;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+.text p {
+    font-size: 1.05em;
+    margin-bottom: 6%;
+}
+.column.vid-now{
+    padding-top: 0;
+}
+.column.text-now{
+    height: fit-content;
+    padding: 13% 0 10px;
 }
 .video-col{
-    width: 89%;
+    width: 100%;
     height: 500px;
 }
 .service-wrapper h1 {
-    margin: 13px 0;
-    font-size: 3em;
+    margin: 2% 0;
+    font-size: 2em;
 }
 .cards {
     margin-top: 30px;
     gap: 20px;
 }
-.card{
-    height: 300px;
+.card {
+    height: 250px;
 }
 .learnmore button {
     margin-top: 40%;
@@ -487,7 +501,7 @@ form {
 }
 .test-wrap h1 {
     margin: 5px 0 15px;
-    font-size: 2.2em;
+    font-size: 2em;
 }
 .test-cards {
     flex-direction: column;
@@ -520,16 +534,16 @@ form {
     text-align: center;
 }
 .urgent-wrap h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
 }
 .urgent-wrap h3 {
-    font-size: 2em;
-    margin: 20px 0;
+    font-size: 1.2em;
+    margin: 20% 0;
 }
 .urgent-wrap p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+    font-size: 1.1em;
+    margin-bottom: 25%;
 }
 .urgent-wrap p span {
     color: #01a4f0;
