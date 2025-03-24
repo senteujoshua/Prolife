@@ -234,3 +234,112 @@
     letter-spacing: 0.4px;
     line-height: 25px;
 }
+
+@media (max-width: 480px){
+    .about{
+        margin-top: 2%;
+    }
+    .about .container{
+        padding: 5px 5%;
+    }
+    .about-wrap{
+        width: 100%;
+    }
+    .about-wrap:nth-child(2){
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5%;
+    }
+    .column {
+        padding-top: 3%;
+    }
+    .img-col1 {
+        width: 100%;
+        height: 400px;
+        border-radius: 2%;
+    }
+    .img-col2{
+        width: 100%;
+        height: 400px;
+        border-radius: 2%;
+    }
+    .text {
+        margin-left: 2%;
+        height: 70%;
+        padding: 0 1.1%;
+    }
+    .text p {
+        font-size: 0.98em;
+        margin-bottom: 3%;
+    }
+    .text .special {
+        font-size: 1.15em;
+        margin-bottom: 3%;
+    }
+    .text h3 {
+        margin-bottom: 4%;
+        font-size: 2em;
+    }
+    .cta {
+        margin-top: 15%;
+        height: 100vh;
+        background: transparent;
+    }
+    .cta .container {
+        padding: 10px 0;
+        position: relative;
+    }
+    .mission-values{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0;
+        filter: none;
+    }
+    .mission-values h1 {
+        padding: 2px 1.5%;
+        font-size: 1.8em;
+        margin-bottom: 2%;
+    }
+    .mission-values p {
+        margin-top: 1.5%;
+        color: #0a024b;
+        letter-spacing: 0.25px;
+        line-height: 19px;
+    }
+    .mission-values h2 {
+        width: 100%;
+        padding: 9% 1% 1%;
+        font-size: 1.3em;
+    }
+    .cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: start;
+        padding: 0 50px;
+    }
+    .story {
+        padding-right: 1%; 
+    }
+    .miss-val {
+        padding-left: 30px;
+        border-left: 8px solid #430000;
+    }
+    .theteam {
+        height: 100vh;
+        margin: 88% 0 3%;
+    }
+    .theteam .container {
+        padding: 10px 2%;
+    }
+    .theteam h1 {
+        font-size: 1.8em;
+    }
+    .team {
+        width: 100%;
+        height: 400px;
+        gap: 1.5%;
+    }
+}

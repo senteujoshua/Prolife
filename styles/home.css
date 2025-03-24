@@ -444,8 +444,8 @@ form {
     gap: 24px;
 }
 .about {
-    padding: 30px 0px 1.5%;
-    margin: 680px 0px 0px;
+    padding: 0 0px 1.5%;
+    margin: 180% 0px 0px;
 }
 .about-wrap {
     flex-direction: column-reverse;
@@ -455,7 +455,6 @@ form {
 }
 .text {
     margin-left: 0;
-    height: 50%;
     padding: 20px 5px;
 }
 .text .special {
@@ -561,8 +560,14 @@ form {
     padding: 30px 10px;
 }
 .contact-form {
-    padding: 30px 10px;
-    height: fit-content;
+    padding: 10px 10px 0;
+    height: 60%;
+}
+.services {
+    padding: 0 0 5%;
+}
+.card {
+    height: 390px;
 }
 form {
     gap: 24px;
@@ -588,6 +593,41 @@ form {
 }
 .video-col{
     height: 550px;
+}
+.test-wrap h1 {
+    font-size: 3em;
+}
+.learnmore button {
+    margin-top: 50%;
+}
+.testimonials {
+    margin-top: 10px;
+    height: fit-content;
+}
+.test-wrap h1 {
+    margin: 5px 0 15px;
+    font-size: 2.2em;
+}
+.test-cards {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+.test-card h3 {
+    font-size: 0.98em;
+    margin: 1px 0;
+}
+.test-card p {
+    margin: 2px 0;
+    font-size: 0.99em;
+}
+.test-card a {
+    font-size: 0.99em;
+}
+.test-card {
+    width: 480px;
+    height: 250px;
 }
 .urgency {
     height: 100vh;
