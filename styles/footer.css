@@ -104,7 +104,11 @@ footer {
 .copyright p{
     color: #28263b;
 }
+
 @media (max-width: 768px){
+    .container {
+        padding: 10px 1%;
+    }
     footer{
         height: fit-content;
     }
@@ -118,9 +122,11 @@ footer {
         padding:0;
         text-align: center;
     }
+    .col1 p {
+        font-size: 13px;
+    }
     .col1 .logo{
         justify-content: center;
-        height: 115px;
     }
     .col2 {
         flex-direction: column;
