@@ -362,7 +362,7 @@ input{
     padding:10px 5px;
     font-family: "Reddit Sans Condensed", serif;
     margin: 20px 0;
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
     text-decoration: none;
     color: #4e9ab8;
@@ -395,7 +395,7 @@ input{
 }
 .urgent-wrap h1{
     font-family: "Faculty Glyphic", serif;
-    font-size: 5em;
+    font-size: 3em;
     color: #f9f9f9;
     margin: 40px 0;
 }
