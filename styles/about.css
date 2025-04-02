@@ -347,3 +347,37 @@
         width: 283px;
     }
 }
+@media (min-width: 481px) and (max-width: 768px){
+    .about .container {
+        padding: 10px 2%;
+    }
+    .img-col1 {
+        width: 90%;
+        height: 400px;
+    }
+    .text {
+        margin-left: 7%;
+        height: 400px;
+        padding: 10px 5px;
+    }
+    .text .special {
+        font-size: 0.9em;
+        margin-bottom: 2%;
+    }
+    .text h3 {
+        margin-bottom: 2%;
+        font-size: 1.1em;
+    }
+    .text p {
+        font-family: "Forum", serif;
+        font-size: 1em;
+        margin-bottom: 4%;
+    }
+    .img-col2 {
+        width: 95%;
+        height: 400px;
+        background-color: rgba(78, 152, 192, 0.7);
+        border-radius: 5px;
+        position: relative;
+    }
+}

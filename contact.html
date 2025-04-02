@@ -16,6 +16,14 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/media.css">
   <link rel = "stylesheet" href ="styles/contact.css">
+  <script>
+    fetch('whatsapp-button.html')
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML('beforeend', data);
+    });
+</script>
+  <link rel="stylesheet" href="styles/whatsapp.css">
 </head>
 <body>
 <!-- Header -->
@@ -156,6 +164,10 @@
       </div>
     </div>
   </footer>
+    <!-- floating whatsapp -->
+    <a href="https://wa.me/message/ISF6TBHZGWPJA1" class="whatsapp-float" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
   <script src="style.js"></script>
 </body>
 </html>

@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/prosthetics.css">
+    <script>
+      fetch('whatsapp-button.html')
+      .then(response => response.text())
+      .then(data => {
+          document.body.insertAdjacentHTML('beforeend', data);
+      });
+  </script>
+    <link rel="stylesheet" href="styles/whatsapp.css">
 </head>
 <body>
 <!-- Header -->
@@ -198,6 +206,10 @@
       </div>
     </div>
   </footer>
+    <!-- floating whatsapp -->
+    <a href="https://wa.me/message/ISF6TBHZGWPJA1" class="whatsapp-float" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
     <script>
         window.addEventListener("scroll", function () {
     let header = document.getElementById("header");
