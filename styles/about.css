@@ -380,4 +380,61 @@
         border-radius: 5px;
         position: relative;
     }
+    .cont {
+        padding: 0 3%;
+    }
+    .story {
+        padding-right: 1.5%;
+    }
+    .mission-values h1 {
+        width: 100%;
+        padding: 0.01% 1.5%;
+        font-size: 1.5em;
+        margin-bottom: 5%;
+    }
+    .mission-values p {
+        margin-top: 6%;
+        font-size: 0.9em;
+        line-height: 1.8em;
+    }
+    .mission-values h2 {
+        padding: 1px 10px;
+        font-size: 1.5em;
+    }
+    .miss-val {
+        padding-left: 3%;
+    }
+    .team {
+        gap: 1.3%;
+    }
+    .theteam {
+        height: 700px;
+        margin: 50% 0 20%;
+    }
+    .theteam h1 {
+        width: 100%;
+        padding: 1% 10%;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    .team-card-img {
+        height: 200px;
+        width: 180px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .team-card {
+        flex: 1 1 200px;
+        height: 100%;
+    }
+    .team-card h3 {
+        font-size: 1.1em;
+    }
+    .team-card p {
+        font-size: 0.9em;
+    }
+    .urgent-wrap h1 {
+        font-size: 2em;
+        margin: 0;
+    }
 }
