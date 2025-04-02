@@ -1,7 +1,7 @@
 .hero{
     height: 128vh;
     width: 100%;
-    background: linear-gradient(rgba(4, 55, 103, 0.85), rgba(6, 67, 92, 0.85)), url(../images/tom-claes-CfdzNybONzc-unsplash.jpg);
+    background: linear-gradient(rgba(4, 55, 103, 0.85), rgba(6, 67, 92, 0.85)), url(../images/hero2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -362,7 +362,7 @@ input{
     padding:10px 5px;
     font-family: "Reddit Sans Condensed", serif;
     margin: 20px 0;
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: bold;
     text-decoration: none;
     color: #4e9ab8;
@@ -395,7 +395,7 @@ input{
 }
 .urgent-wrap h1{
     font-family: "Faculty Glyphic", serif;
-    font-size: 5em;
+    font-size: 3em;
     color: #f9f9f9;
     margin: 40px 0;
 }
