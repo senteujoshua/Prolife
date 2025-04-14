@@ -28,15 +28,12 @@
     height: 40px;
 }
 .card-map{
-    width: 95%;
-    margin: 4%;
-    
-
+    width: 100%;
+    margin: 0;
 }
 .card-body{
     padding: 0%;
     padding-bottom: 30px;
-    
 }
 .card-body p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -48,25 +45,45 @@
     gap: 30px;
     align-items: center;
 }
-.centered-container{
-    padding-top: 100px;
+.centered-container {
+    padding-top: 30px;
     position: relative;
     background-color: rgb(228, 235, 241);
-    flex-wrap: wrap;
-
     display: flex;
-    /* flex-direction: column; */
-    align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-    gap: 20px;
-
 }
-.centered-container img {
-    max-width: 50%; /* Ensure responsiveness */
+
+.centered-container .container {
+    margin: 0;
+    padding: 1px 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* make both image and text take equal height */
+    width: 90%; /* or 100%, depending on your page layout */
+    gap: 30px;
+}
+
+.image {
+    flex: 1;
     height: 100%;
 }
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px; /* optional */
+}
+
+.card-body {
+    flex: 1;
+    padding: 20px;
+    text-align: left; /* or center, based on preference */
+}
+
 
 @media (max-width: 768px) {
     .centered-container {
@@ -86,7 +103,7 @@
 }
 .contact-hero{
     width: 100%;
-    max-height: 300px;
+    height: 450px;
     position: relative;
     
     display: flex;
@@ -96,9 +113,6 @@
     color: white;
     background-size: cover;
     /* background-position: center; */
-    
-
-    
 }
 
 .hero-wrap{
