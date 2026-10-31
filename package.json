@@ -1,0 +1,9 @@
+{
+  "name": "prolife-orthopaedic",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Website for Prolife Orthopaedic, a prosthetics and orthotics clinic in Nairobi, Kenya.",
+  "dependencies": {
+    "nodemailer": "^10.3.1"
+  }
+}
